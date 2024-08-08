@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fact Station!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="chat-bubble.png" alt="" height="68" width="68" />
+          <h1>Fact Station!</h1>
+        </div>
+
+        <button class="btn btn-large btn-open">share a fact</button>
+      </header>
+      <form class="fact-form hidden" action="">
+        <input type="text" placeholder="Share a fact with the world.." />
+        <span>200</span>
+        <input type="text" placeholder="Trustworthy source" />
+        <select name="" id="">
+          <option value="">Choose Category:</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="finance">Finance</option>
+          <option value="health">Health</option>
+          <option value="history">History</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="news">News</option>
+          <option value="society">Society</option>
+        </select>
+        <button class="btn btn-large">Post</button>
+      </form>
+      <main class="main">
+        <aside>
+          <ul class="side-category">
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #16a34a"
+              >
+                Science
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #3b82f6"
+              >
+                Technology
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #ef4444"
+              >
+                Finance
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #eab308"
+              >
+                Society
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #940675"
+              >
+                Entertainment
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #1cd3da"
+              >
+                Health
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #f97136"
+              >
+                History
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-category"
+                style="background-color: #d424f7"
+              >
+                News
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <section>
+          <ul class="facts-list">
+            <li class="fact">
+              <p>
+                First programer was a woman
+                <a
+                  class="source"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >(source)
+                </a>
+              </p>
+              <span style="background-color: #f97136" class="tag">history</span>
+              <div class="vote-button">
+                <button>😍 4</button>
+                <button>👍 4</button>
+                <button>⛔ 0</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                React was developed by Meta
+                <a
+                  class="source"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >(source)
+                </a>
+              </p>
+              <span style="background-color: #3b82f6" class="tag"
+                >technology</span
+              >
+              <div class="vote-button">
+                <button>😍 14</button>
+                <button>👍 3</button>
+                <button>⛔ 6</button>
+              </div>
+            </li>
+            <li class="fact">
+              <p>
+                Millennial dads spend three times as much time with their
+                children compared to the time their own fathers spent with them.
+                In 1982, 43% of fathers had never changed a diaper, but today
+                that number has decreased to just 3% .
+                <a
+                  class="source"
+                  href="https://www.pewresearch.org/short-reads/2023/06/15/key-facts-about-dads-in-the-us/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >(source)
+                </a>
+              </p>
+              <span style="background-color: #eab308" class="tag">society</span>
+              <div class="vote-button">
+                <button>😍 14</button>
+                <button>👍 3</button>
+                <button>⛔ 0</button>
+              </div>
+            </li>
+          </ul>
+          <!-- <p>Made by Javeria❤</p> -->
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
